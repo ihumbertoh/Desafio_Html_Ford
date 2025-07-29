@@ -1,0 +1,65 @@
+/* Estilo base do corpo e layout geral */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 20px;
+}
+
+/* Estilo do Cabeçalho */
+
+header {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo {
+    height: 52px;
+    width: 110px;
+}
+
+.header_ajuste {
+    width: 110px;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #003478; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
