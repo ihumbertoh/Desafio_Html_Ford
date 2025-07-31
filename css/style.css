@@ -15,19 +15,27 @@ body {
     padding: 0 20px;
 }
 
+
 /* Estilo do Cabeçalho */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #ffffff;
     padding: 10px 40px;
     border-bottom: 1px solid #ddd;
 
 }
 
-header img {
-    height: 50px;
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_header {
+    margin-left: 10px;
+    height: 50px
 }
 
  nav {
@@ -36,21 +44,54 @@ header img {
     transform: translateX(-50%);
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
-    margin: 0;
+    gap: 25px;
+    margin-top: -30px;
     padding: 0;
 }
 
  nav a {
     color: #003478; 
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
  nav a:hover {
     text-decoration: underline;
+}
+
+/* Estilo do Main */
+
+main {
+    flex: 1;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.container_main {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container_main img {
+    width: 100%;
+    max-height: 450px;
+    max-width: 1080px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.container_main img:hover {
+    transform: scale(1.02);
+}
+
+.descricao {
+    margin-top: 15px;
+    font-size: 18px
 }
