@@ -1,0 +1,15 @@
+main .imagemPrincipal img{
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.imagemPrincipal img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}

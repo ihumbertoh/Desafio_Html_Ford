@@ -3,10 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ffffff; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -38,13 +36,13 @@ header {
     height: 50px
 }
 
- nav {
+ header nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
@@ -52,23 +50,26 @@ nav ul {
     padding: 0;
 }
 
- nav a {
+header nav a {
     color: #003478; 
     text-decoration: none;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
- nav a:hover {
+header nav a:hover {
+    color: #1351d8;
     text-decoration: underline;
 }
 
 /* Estilo do Main */
 
 main {
-    flex: 1;
-    padding: 0;
+    flex-grow: 1;
+    padding: 10px 10px;
     margin-top: 20px;
+    /* text-align: center; */
 }
 
 .container_main {
@@ -93,5 +94,43 @@ main {
 
 .descricao {
     margin-top: 15px;
-    font-size: 18px
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Estilo do Rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b3571;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.redes_sociais p{
+    margin: 5px 0;
+}
+
+.redes_sociais img,
+.logo_footer img{
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.redes_sociais img:hover{
+    transform: scale(1.1);
+}
+
+.copyright p{
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
 }
