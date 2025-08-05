@@ -1,6 +1,8 @@
-main .imagemPrincipal img{
-    max-width: 70%;
-    width: 100%;
+
+
+
+.imagemPrincipal{
+    max-width: 75%;
     height: auto;
     object-fit: cover;
     border-radius: 0;
@@ -10,7 +12,7 @@ main .imagemPrincipal img{
     
 }
 
-.imagemPrincipal img:hover{
-    transform: scale(1.03);
+.imagemPrincipal:hover{
+    transform:scale(1.03);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
