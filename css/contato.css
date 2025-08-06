@@ -16,3 +16,43 @@
     width: 100%;
     height: auto;
 }
+
+.formularioContainer {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario h3{
+    color: black;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.inputGrupo{
+    position: relative;
+}
+
+.inputGrupo{
+    position: relative;
+}
+
+
+.inputGrupo input,
+.inputGrupo select,
+.inputGrupo textarea {
+    width: 100%;
+    padding: 7px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #f9f9f9;
+    transition: all 0.3 ease;
+}
